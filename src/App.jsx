@@ -1,10 +1,10 @@
-import WalletConnect from './components/WalletConnect';
-import VaultInfo from './components/VaultInfo';
-import Deposit from './components/Deposit';
-import Withdraw from './components/Withdraw';
-import WithdrawSpecfic from './components/WithdrawSpecficAmount';
-import OwnerActions from './components/OwnerActions';
-import './App.css';
+import WalletConnect from "./components/WalletConnect";
+import VaultInfo from "./components/VaultInfo";
+import Deposit from "./components/Deposit";
+import Withdraw from "./components/Withdraw";
+import WithdrawSpecfic from "./components/WithdrawSpecficAmount";
+import OwnerActions from "./components/OwnerActions";
+import "./App.css";
 
 function App() {
   return (
@@ -29,13 +29,13 @@ function App() {
 
             {/* Withdraw Card */}
             <Withdraw />
-
+          </div>
+          <div className="action-grid">
             {/* Withdraw Specfic Amount Card */}
             <WithdrawSpecfic />
+            {/* Owner Actions */}
+            <OwnerActions />
           </div>
-
-          {/* Owner Actions */}
-          <OwnerActions />
 
           {/* Instructions */}
           <div className="instructions">
@@ -47,10 +47,14 @@ function App() {
               <li>Withdraw your funds anytime</li>
               <li>Contract owner can withdraw all funds</li>
             </ol>
-            
+
             <div className="info-box">
-              <p><strong>ℹ️ Note:</strong></p>
-              <p>This is a UI mockup only. No blockchain integration included.</p>
+              <p>
+                <strong>ℹ️ Note:</strong>
+              </p>
+              <p>
+                This is a UI mockup only. No blockchain integration included.
+              </p>
               <p>All actions are simulated for demonstration purposes.</p>
             </div>
           </div>
